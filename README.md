@@ -14,7 +14,7 @@ You can build a Debian package from this source code using
 ```bash
 git clone https://github.com/ethanc8/librealsense2-dkms --branch raspbian-12
 rm librealsense2-dkms/README.md
-fakeroot dpkg-deb --build librealsense2-dkms librealsense2-dkms_1.3.24-6.1.63+rpi3.deb
+fakeroot dpkg-deb --build librealsense2-dkms librealsense2-dkms_1.3.24-1+6.1.63+rpi3.deb
 ```
 
 ## Using the files from the Raspbian kernel

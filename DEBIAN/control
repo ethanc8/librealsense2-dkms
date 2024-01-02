@@ -1,6 +1,6 @@
 Package: librealsense2-dkms
 Source: librealsense2
-Version: 1.3.24-0ubuntu1
+Version: 1.3.24-1+6.1.63+rpi3
 Architecture: all
 Maintainer: Evgeni Raikhel <evgeni.raikhel@intel.com>
 Installed-Size: 7658
