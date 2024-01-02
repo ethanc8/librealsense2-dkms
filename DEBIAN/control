@@ -1,0 +1,20 @@
+Package: librealsense2-dkms
+Source: librealsense2
+Version: 1.3.24-0ubuntu1
+Architecture: all
+Maintainer: Evgeni Raikhel <evgeni.raikhel@intel.com>
+Installed-Size: 7658
+Depends: dkms (>= 2.1.0.0)
+Recommends: librealsense2-udev-rules
+Section: kernel
+Priority: extra
+Homepage: https://github.com/IntelRealSense/librealsense
+Description: Modified kernel modules for librealsense2
+ uvcvideo - Depth-related 4CC streaming formats definitions and metadata attributes
+ videodev - Registering 4CC with ioctl
+ .
+ The package uses the DKMS system to automatically compile and install
+ the modified driver on your current and future kernels.
+ .
+ On Debian and Ubuntu systems, supplied driver takes precedence
+ over the existing driver by virtue of module path order.

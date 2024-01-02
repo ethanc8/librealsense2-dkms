@@ -1,0 +1,10 @@
+#!/bin/sh -e
+#Reverting original kernel modules when DKMS is removed. This will make the original modules current without restarting the PC
+echo -n "Reloading original modules into kernel..."
+sudo modprobe -r uvcvideo && sudo modprobe -r videodev &&\
+sudo modprobe uvcvideo && echo " complete"
+echo Current status:
+dkms status
+echo 'mod: videodev \t\t\t' ` modinfo videodev | grep ^version:`
+echo 'mod: uvcvideo \t\t\t' `modinfo uvcvideo | grep ^version:`
+
